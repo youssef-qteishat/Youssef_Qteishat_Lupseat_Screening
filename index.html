@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Youssef's Spreadsheet Prototype</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1>LupSeat Screening Test</h1>
+<h2>Please input your full name, email address, and grade level</h2>
+<form action="app.js" method="get">
+  <label for="name">Name: </label>
+  <input type="text" id="name" name="name"><br><br>
+  <label for="email">Email: </label>
+  <input type="text" id="email" name="email"><br><br>
+  <label for="level">Level: </label>
+      <select name="level" id="level">
+        <option value="initial_level">Select grade level</option>
+        <option value="first">first</option>
+        <option value="second">second</option>
+        <option value="third">third</option>
+        <option value="fourth">fourth</option>
+      </select><br><br>
+  <input type="submit" value="Submit">
+</form>
+<!-- <div class="Selection-Box">
+  <table>
+      <tr>
+          <td><input type="text" name="name" placeholder="Name"></td>
+          <td><input type="text" name="email"placeholder="Email"></td>
+          <td><input type="text" name="level"placeholder="Level"></td>
+      </tr>
+  </table>
+</div> -->
+<script src="app.js"></script>
+
+</body>
+</html>
