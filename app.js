@@ -29,9 +29,25 @@ function getInputValues() {
 }
 
 function checkInputs(student){
-  if (student.name == "" || student.email == "" || student.level == ""){
+  var noName,noEmail,noLevel;
+  if (student.name == ""){
     alert("Please fill out all fields in the form!")
-    return false;
+    document.forms["studentForm"]["name"].placeholder = "Please enter student's name!"
+    document.forms["studentForm"]["name"].style.borderColor = "red";
+    noName = false;
+  }
+  if (student.email == ""){
+    document.forms["studentForm"]["email"].placeholder = "Please enter student's email!"
+    document.forms["studentForm"]["email"].style.borderColor = "red";
+    noEmail = false;
+  }
+  if (student.level == ""){
+    document.forms["studentForm"]["level"].placeholder = "Please enter student's level!"
+    document.forms["studentForm"]["level"].style.borderColor = "red";
+    noLevel = false;
+  }
+  if (noName == false || noEmail == false || noLevel == false){
+    return false
   }
   return true;
 }

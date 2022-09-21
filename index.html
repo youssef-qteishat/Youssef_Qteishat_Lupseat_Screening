@@ -8,22 +8,22 @@
 <body>
 <h1>LupSeat Screening Test</h1>
 <h2>Please enter your full name, email address, and grade level</h2>
+
 <form name="studentForm">
-  <label for="name">Name: </label>
-  <input type="text" name="name" required><br><br>
-  <label for="email">Email: </label>
-  <input type="email" name="email" required><br><br>
-  <label for="level">Level: </label>
-      <select name="level" required>
+  <label for="name">Name </label><br>
+  <input size="30" type="text" name="name"><br><br>
+  <label for="email">Email </label><br>
+  <input size="30" type="text" name="email"><br><br>
+  <label for="level">Level </label><br>
+      <select style="width: 215px;"name="level">
         <option value="">Select grade level</option>
-        <option value="first">first</option>
-        <option value="second">second</option>
-        <option value="third">third</option>
-        <option value="fourth">fourth</option>
+        <option value="first year">first year</option>
+        <option value="second year">second year</option>
+        <option value="third year">third year</option>
+        <option value="fourth year">fourth year</option>
       </select><br><br>
   <input type="button" value="Submit" onClick="onSubmit()">
   <button type="reset" value="Reset">Reset</button><br><br>
-  <input type="button" value="Delete" onClick="removeRow()">
 </form>
 
 <table id="studentTable">
@@ -34,7 +34,10 @@
   <th>Edit/Delete</th>
 </tr>
 </table>
-
+<footer>
+  <p>Author: Youssef Qteishat<br>
+  Email: <a href="mailto:ysqteishat@ucdavis.edu">ysqteishat@ucdavis.edu</a></p>
+</footer>
 <script src="app.js"></script>
 </body>
 </html>
